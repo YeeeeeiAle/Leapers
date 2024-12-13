@@ -22,7 +22,12 @@ nav = option_menu(
     icons=["book-fill", "brush-fill", "house-door-fill"],
     default_index = 0,
     orientation = "horizontal",
-
+    styles={
+        "container": {"padding": "0!important", "background-color": "#903b93"},
+        "icon": {"color": "#db69df", "font-size": "25px"},
+        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#89298c"},
+        "nav-link-selected": {"background-color": "#730776"},
+    }
 )
 
 
