@@ -24,7 +24,7 @@ nav = option_menu(
     orientation = "horizontal",
     styles={
         "container": {"padding": "15!important", "background-color": "#2f2f2f"},
-        "icon": {"color": "#181718", "font-size": "25px"},
+        "icon": {"color": "#ffffff", "font-size": "25px"},
         "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#1d1d1d"},
         "nav-link-selected": {"background-color": "#1d1d1d"},
     }
