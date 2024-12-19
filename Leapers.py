@@ -49,9 +49,10 @@ elif nav == "Graffiti":
     with st.container():
         st.write("---")
         st.title("Cool Graffiti :lower_left_paintbrush:")
-        left_column, center_column, right_column = st.columns(3)
-        with left_column:
-            st.image(graffiti1, caption=("Garibaldi"))
+        st.expander("Graffiti")
+            left_column, center_column, right_column = st.columns(3)
+            with left_column:
+                st.image(graffiti1, caption=("Garibaldi"))
 
 #---------Urbex
 elif nav == "Urbex":
