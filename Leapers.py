@@ -10,6 +10,7 @@ graffiti1 = Image.open("Images/Leapers1.jpg")
 palazzo1 = Image.open("Images/Palazzo1.jpg")
 palazzo2 = Image.open("Images/Palazzo2.jpg")
 palazzo3 = Image.open("Images/Palazzo3.jpg")
+palazzo4 = Image.open("Images/palazzo4.jpg")
 piscina1 = Image.open("Images/piscina1.jpg")
 piscina2 = Image.open("Images/piscina2.jpg")
 piscina3 = Image.open("Images/piscina3.jpg")
@@ -19,7 +20,6 @@ CoveredSpots = "csv/CoveredSpotsR.csv"
 DecentSpots = "csv/DecentSpotsR.csv"
 GoodSpots = "csv/GoodSpotsR.csv"
 MilansFinest = "csv/MilansFinestR.csv"
-
 bm = pd.read_csv(BlueMarkers)
 cs = pd.read_csv(CoveredSpots)
 ds = pd.read_csv(DecentSpots)
@@ -274,15 +274,24 @@ elif nav == "Urbex":
         with st.expander("Abandoned Buildings"):
             st.subheader("Abandoned Buildings")
             col1, col2, col3 = st.columns(3)
+            palazzo1 = palazzo1.resize((600, 600))
+            palazzo2 = palazzo2.resize((600, 600))
+            palazzo3 = palazzo3.resize((600, 600))
+            palazzo4 = palazzo4.resize((600, 600))
             with col1:
-                st.image(palazzo1, width=400)
+                st.image(palazzo1)
             with col2:
-                st.image(palazzo2, width=400)
+                st.image(palazzo2)
+                st.image(palazzo4)
             with col3:
-                st.image(palazzo3, width=700)
+                st.image(palazzo3)
         with st.expander("Abandoned Swimming Pools"):
             st.subheader("Abandoned Swimming Pools")
             col1, col2, col3, col4 = st.columns(4)
+            piscina1 = piscina1.resize((600, 600))
+            piscina2 = piscina2.resize((600, 600))
+            piscina3 = piscina3.resize((600, 600))
+            piscina4 = piscina4.resize((600, 600))
             with col1:
                 st.image(piscina1, width=400)
             with col2:
