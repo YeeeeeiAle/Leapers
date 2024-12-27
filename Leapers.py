@@ -15,6 +15,7 @@ piscina1 = Image.open("Images/piscina1.jpg")
 piscina2 = Image.open("Images/piscina2.jpg")
 piscina3 = Image.open("Images/piscina3.jpg")
 piscina4 = Image.open("Images/piscina4.jpg")
+reel_palazzo1= open("Images/reelpalazzo1.mp4")
 BlueMarkers = 'csv/BlueMarkersR.csv'
 CoveredSpots = "csv/CoveredSpotsR.csv"
 DecentSpots = "csv/DecentSpotsR.csv"
@@ -305,7 +306,7 @@ else:
     with st.container():
         st.write("---")
         st.title("Parkour Spots")
-        map = folium.Map(location=[45.46751985119023, 9.179446213116028], zoom_start=11)
+        map = folium.Map(location=[45.46910803978604, 9.33], zoom_start=11)
         filter = st.multiselect("Filters", ["A few jumps possible", "Decent Spots", "Good Spots", "Milan's Finest", "Covered Spots"], default=["A few jumps possible", "Decent Spots", "Good Spots", "Milan's Finest", "Covered Spots"])
         if "A few jumps possible" in filter:
             blue_markers()
