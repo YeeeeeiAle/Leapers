@@ -15,7 +15,8 @@ piscina1 = Image.open("Images/piscina1.jpg")
 piscina2 = Image.open("Images/piscina2.jpg")
 piscina3 = Image.open("Images/piscina3.jpg")
 piscina4 = Image.open("Images/piscina4.jpg")
-reel_palazzo1= open("Images/reelpalazzo1.mp4")
+reel_palazzo1 = open("Images/ReelPalazzo.mp4")
+reel_palazzo1 = reel_palazzo1.read()
 BlueMarkers = 'csv/BlueMarkersR.csv'
 CoveredSpots = "csv/CoveredSpotsR.csv"
 DecentSpots = "csv/DecentSpotsR.csv"
@@ -281,11 +282,12 @@ elif nav == "Urbex":
             palazzo4 = palazzo4.resize((600, 600))
             with col1:
                 st.image(palazzo1)
+                st.image(palazzo3)
             with col2:
                 st.image(palazzo2)
                 st.image(palazzo4)
             with col3:
-                st.image(palazzo3)
+                st.video(reel_palazzo1)
         with st.expander("Abandoned Swimming Pools"):
             st.subheader("Abandoned Swimming Pools")
             col1, col2, col3, col4 = st.columns(4)
