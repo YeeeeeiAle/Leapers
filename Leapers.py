@@ -287,7 +287,7 @@ elif nav == "Urbex":
                 st.image(palazzo2)
                 st.image(palazzo4)
             with col3:
-                st.video(reel_palazzo1_bytes)
+                st.video(reel_palazzo1)
         with st.expander("Abandoned Swimming Pools"):
             st.subheader("Abandoned Swimming Pools")
             col1, col2, col3, col4 = st.columns(4)
