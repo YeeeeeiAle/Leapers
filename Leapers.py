@@ -306,15 +306,15 @@ else:
         st.write("---")
         st.title("Parkour Spots")
         map = folium.Map(location=[45.46751985119023, 9.179446213116028], zoom_start=11)
-            filter = st.multiselect("Filters", ["A few jumps possible", "Decent Spots", "Good Spots", "Milan's Finest", "Covered Spots"], default=["A few jumps possible", "Decent Spots", "Good Spots", "Milan's Finest", "Covered Spots"])
-            if "A few jumps possible" in filter:
-                blue_markers()
-            if "Decent Spots" in filter:
-                decent_spots()
-            if "Good Spots" in filter:
-                good_spots()
-            if "Milan's Finest" in filter:
-                milans_finest()
-            if "Covered Spots" in filter:
-                covered_spots()
-            st_map = st_folium(map, width=1920)
+        filter = st.multiselect("Filters", ["A few jumps possible", "Decent Spots", "Good Spots", "Milan's Finest", "Covered Spots"], default=["A few jumps possible", "Decent Spots", "Good Spots", "Milan's Finest", "Covered Spots"])
+        if "A few jumps possible" in filter:
+            blue_markers()
+        if "Decent Spots" in filter:
+            decent_spots()
+        if "Good Spots" in filter:
+            good_spots()
+        if "Milan's Finest" in filter:
+            milans_finest()
+        if "Covered Spots" in filter:
+            covered_spots()
+        st_map = st_folium(map, width=1920)
