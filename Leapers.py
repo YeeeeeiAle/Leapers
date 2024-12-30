@@ -251,8 +251,10 @@ if nav == "About":
     st.write("---")
     st.title("WE ARE LEAPERS :wave:")
     st.subheader("A Parkour Group")
-    st.write("We are a friend group who likes Parkour, Freerunning and Acrobatics.")
-    st.write("Social: [Instagram](https://www.instagram.com/leapers_pk/)")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write("We are a friend group who likes Parkour, Freerunning, and Acrobatics. We enjoy pushing our limits, exploring urban and natural environments, and finding creative ways to move through our surroundings. Whether it's mastering new flips, perfecting vaults, or choreographing stylish runs, we thrive on the challenge and freedom these activities bring. Sharing our passion keeps us motivated and constantly learning from one another!")
+        st.write("Social: [Instagram](https://www.instagram.com/leapers_pk/)")
 
 elif nav == "Graffiti":
     with st.container():
